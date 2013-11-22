@@ -718,3 +718,7 @@ input[type="submit"]:hover {
     .phone { width: auto; height: auto; background: #ed1c24; margin: 0 6% 24px; padding: 24px 0; border-radius: 5px; }
     .phone .title { padding-top: 0; font-size: 20px; }
 }
+
+@media all and (max-height: 440px) {
+    .modal .wrapper { width: 70%; margin-top: 24px; }
+}
