@@ -665,12 +665,12 @@ input[type="submit"]:hover {
     MEDIA QUERIES
 ========================================================**/
 
-@media all and (max-width: 940px) {
-    .main-nav li { margin-left: 2em; }
-    .main-nav a { font-size: 0.875em; }
-}
+@media all and (max-width: 700px) {
+    .wrapper { width: 92%; }
+    .header { padding-bottom: 1em; }
+    .logo { width: 100px; }
+    .btn-mobile { margin-top: 22px; }
 
-@media all and (max-width: 940px) {
     .main-nav { display: none; clear: both; width: 100%; padding: 0; margin-top: 1em; background: #e12526; }
     .main-nav li { width: 50%; margin: 0; border-bottom: 1px solid #f09292; }
     .main-nav li:nth-child(2n+1) { border-right: 1px solid #f09292; }
@@ -682,9 +682,6 @@ input[type="submit"]:hover {
 }
 
 @media all and (max-width: 600px) {
-    .wrapper { width: 92%; }
-    .logo { width: 100px; }
-    .btn-mobile { margin-top: 0.75em; }
 }
 
 @media all and (max-width: 520px) {
