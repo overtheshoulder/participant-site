@@ -533,7 +533,7 @@ input[type="submit"]:hover {
 }
 
 .page-id-8 .content {
-    width: 850px;
+    max-width: 850px;
     margin: 0 auto 36px;
     padding: 24px;
     background: #fff;
@@ -678,10 +678,19 @@ input[type="submit"]:hover {
     .hero .content p { font-size: 16px; }
 }
 
+@media all and (max-width: 840px) {
+    .connector { display: none; }
+    .steps { height: auto; }
+    .step { margin: 0 5% 24px; }
+}
+
 @media all and (max-width: 810px) {
+    .main { padding: 36px 0; }
     h1 { font-size: 36px; }
     h2 { font-size: 24px; line-height: 32px; }
+    h3 { font-size: 20px; }
     .phone { bottom: 0; top: auto; }
+    .page-id-8 .content p:first-of-type { font-size: 16px; }
 }
 
 @media all and (max-width: 740px) {
@@ -712,12 +721,15 @@ input[type="submit"]:hover {
 
 @media all and (max-width: 600px) {
     .hero .content h1 { font-size: 28px; }
+    
+    .page-id-8 .content .info, .page-id-8 .content .wpcf7 { float: none; width: auto; }
 }
 
 @media all and (max-width: 520px) {
     .main { padding: 24px 0; }
 
     h2 { font-size: 20px; line-height: 24px; }
+    h3 { font-size: 16px; }
     .page-title { font-size: 32px; }
     .sub-title { margin-bottom: 24px; }
 
