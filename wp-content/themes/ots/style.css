@@ -679,6 +679,8 @@ input[type="submit"]:hover {
 }
 
 @media all and (max-width: 810px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 24px; line-height: 32px; }
     .phone { bottom: 0; top: auto; }
 }
 
@@ -703,6 +705,9 @@ input[type="submit"]:hover {
     .main-nav a:hover, .main-nav .current-menu-item a { background: #e43a3b; }
     .btn-mobile { display: block; font-size: 1em; }
     
+    .question { font-size: 20px; line-height: 24px; }
+    .page-id-6 .main .widget .widget-title { font-size: 20px; }
+    .page-id-6 .main .widget p { font-size: 16px; }
 }
 
 @media all and (max-width: 600px) {
@@ -710,6 +715,12 @@ input[type="submit"]:hover {
 }
 
 @media all and (max-width: 520px) {
+    .main { padding: 24px 0; }
+
+    h2 { font-size: 20px; line-height: 24px; }
+    .page-title { font-size: 32px; }
+    .sub-title { margin-bottom: 24px; }
+
     .main-nav li, .main-nav li:nth-child(2n+1) { float: none; width: 100%; border-right: inherit; }
     
     .hero .content { padding: 16px 6%; }
@@ -717,7 +728,14 @@ input[type="submit"]:hover {
     
     .phone { width: auto; height: auto; background: #ed1c24; margin: 0 6% 24px; padding: 24px 0; border-radius: 5px; }
     .phone .title { padding-top: 0; font-size: 20px; }
+    
+    .page-id-6 .main .widget { width: auto;}
 }
+
+@media all and (max-width: 520px) {
+    .page-title { font-size: 28px; }
+}
+
 
 @media all and (max-height: 440px) {
     .modal .wrapper { width: 70%; margin-top: 24px; }
