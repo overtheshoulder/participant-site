@@ -501,7 +501,7 @@ input[type="submit"]:hover {
     margin-bottom: 0;
 }
 
-.help-block {
+.page-id-6 .main .widget {
     width: 382px;
     margin: 0 auto 3px;
     padding: 16px 30px;
@@ -512,12 +512,12 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
-.help-block .title {
+.page-id-6 .main .widget .widget-title {
     margin-bottom: 6px;
     font-size: 24px;
 }
 
-.help-block p {
+.page-id-6 .main .widget p {
     font-size: 18px;
 }
 
