@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<h2 class="sub-title"><?php echo get_post_meta( 8, 'sub-title', true ); ?></h2>
+<h2 class="sub-title"><?php echo get_post_meta( 10, 'sub-title', true ); ?></h2>
 
 <div class="steps cf">
 
