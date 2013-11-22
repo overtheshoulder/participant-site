@@ -39,9 +39,12 @@ body {
 }
 
 .main {
-    padding-top: 3em;
-    padding-bottom: 48px;
+    padding: 48px 0;
 	border-top: 1px solid #eaeaea;
+}
+
+.home .main {
+    padding: 1.5em 0 0;
 }
 
 .sidebar {
@@ -243,9 +246,35 @@ input[type="submit"]:hover {
     margin-left: 0; 
 }
 
-.main-nav .active {
+.main-nav .current-menu-item a {
     color: #333;
 }
+
+.btn-mobile {
+    display: none;
+    float: right;
+    margin-top: 1.25em;
+    padding: 0.5em 0.75em;
+    background: #252525;
+    border-radius: 0.3em;
+    color: #fff;
+    font-size: 0.938em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.btn-mobile:hover {
+    color: #fff;
+}
+
+.btn-mobile .icon-cancel {
+    display: none;
+}
+
+.main-nav.show {
+    display: block;
+}
+
 
 /**========================================================
     MODAL
@@ -346,17 +375,12 @@ input[type="submit"]:hover {
 ========================================================**/
 
 .hero {
-    padding-top: 1.5em;
-    border-bottom: 1px solid #eee9e4;
-}
-
-.hero .wrapper {
     position: relative;
     height: 480px;
     background: #000;
 }
 
-.hero .wrapper:before {
+.hero:before {
     content: "";
     position: absolute;
     left: 10%;
@@ -396,7 +420,7 @@ input[type="submit"]:hover {
     right: 44px;
     width: 289px;
     height: 383px;
-    background: url(../images/phone.png) no-repeat 0 0;
+    background: url(images/phone.png) no-repeat 0 0;
     text-align: center;
 }
 
@@ -412,7 +436,7 @@ input[type="submit"]:hover {
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    background: #9e0b0f url(../images/arrow.png) no-repeat 28px 26px;
+    background: #9e0b0f url(images/arrow.png) no-repeat 28px 26px;
     border-radius: 50%;
 }
 

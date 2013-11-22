@@ -121,8 +121,8 @@
 			) );
 
 			register_sidebar( array(
-				'name'          => __( 'Jobs Sidebar', 'ots' ),
-				'id'            => 'sidebar-jobs',
+				'name'          => __( 'FAQs Sidebar', 'ots' ),
+				'id'            => 'sidebar-faqs',
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -160,21 +160,21 @@
 		);
 	}
 
-    function job_register() {
+    function faq_register() {
         $labels = array(
-            'name'               => 'Jobs',
-            'singular_name'      => 'Job',
+            'name'               => 'FAQs',
+            'singular_name'      => 'FAQ',
             'add_new'            => 'Add New',
-            'add_new_item'       => 'Add New Job',
-            'edit_item'          => 'Edit Job',
-            'new_item'           => 'New Job',
-            'all_items'          => 'All Jobs',
-            'view_item'          => 'View Job',
-            'search_items'       => 'Search Jobs',
-            'not_found'          => 'No Jobs found',
-            'not_found_in_trash' => 'No Jobs found in Trash',
+            'add_new_item'       => 'Add New FAQ',
+            'edit_item'          => 'Edit FAQ',
+            'new_item'           => 'New FAQ',
+            'all_items'          => 'All FAQs',
+            'view_item'          => 'View FAQ',
+            'search_items'       => 'Search FAQs',
+            'not_found'          => 'No FAQs found',
+            'not_found_in_trash' => 'No FAQs found in Trash',
             'parent_item_colon'  => '',
-            'menu_name'          => 'Jobs'
+            'menu_name'          => 'FAQs'
         );
         
         $args = array(
@@ -184,7 +184,7 @@
             'show_ui'            => true,
             'show_in_menu'       => true,
             'query_var'          => true,
-            'rewrite'            => array( 'slug' => 'job' ),
+            'rewrite'            => array( 'slug' => 'faq' ),
             'capability_type'    => 'post',
             'has_archive'        => true,
             'hierarchical'       => false,
@@ -192,9 +192,9 @@
             'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
         );
         
-        register_post_type( 'job', $args );
+        register_post_type( 'faq', $args );
     }
-    add_action( 'init', 'job_register' );
+    add_action( 'init', 'faq_register' );
 
 
 ?>

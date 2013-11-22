@@ -92,6 +92,14 @@
 			</nav>
 		</div>
 	</header>
-	
+
+<?php if ( !is_front_page() ): ?>
+    <section id="title-bar" class="title-bar">
+        <div class="wrapper">
+            <h1 class="page-title"><?php the_title(); ?></h1>
+        </div>
+    </section>
+<?php endif; ?>	
+
 	<section id="main" class="main">
 	    <div class="wrapper cf">
