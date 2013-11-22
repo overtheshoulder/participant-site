@@ -426,7 +426,7 @@ input[type="submit"]:hover {
 }
 
 .phone .title {
-    margin: 170px 0 20px;
+    padding: 170px 0 20px;
     color: #fff;
     text-transform: uppercase;
 }
@@ -665,6 +665,30 @@ input[type="submit"]:hover {
     MEDIA QUERIES
 ========================================================**/
 
+@media all and (max-width: 990px) {
+    .hero { height: auto; overflow: hidden; }
+    .hero .content { padding: 36px 40px 18px 40px; }
+    .hero .content p { padding-right: 360px; }
+    .phone { bottom: auto; top: 132px; }
+    .phone .title { padding-top: 150px; }
+}
+
+@media all and (max-width: 890px) {
+    .hero .content { padding: 24px 30px 18px; }
+    .hero .content p { font-size: 16px; }
+}
+
+@media all and (max-width: 810px) {
+    .phone { bottom: 0; top: auto; }
+}
+
+@media all and (max-width: 740px) {
+    .break { display: inline; }
+    .hero .content { float: none; }
+    .hero .content p { padding-right: 0; }
+    .phone { position: relative; bottom: auto; right: auto; margin: 0 auto -48px; }
+}
+
 @media all and (max-width: 700px) {
     .wrapper { width: 92%; }
     .header { padding-bottom: 1em; }
@@ -682,8 +706,15 @@ input[type="submit"]:hover {
 }
 
 @media all and (max-width: 600px) {
+    .hero .content h1 { font-size: 28px; }
 }
 
 @media all and (max-width: 520px) {
     .main-nav li, .main-nav li:nth-child(2n+1) { float: none; width: 100%; border-right: inherit; }
+    
+    .hero .content { padding: 16px 6%; }
+    .hero .content h1 { font-size: 24px; line-height: 1.25em; }
+    
+    .phone { width: auto; height: auto; background: #ed1c24; margin: 0 6% 24px; padding: 24px 0; border-radius: 5px; }
+    .phone .title { padding-top: 0; font-size: 20px; }
 }
