@@ -378,7 +378,7 @@ input[type="submit"]:hover {
 .hero {
     position: relative;
     height: 480px;
-    background: #000;
+    background: #000 url(images/hero.jpg);
 }
 
 .hero:before {
