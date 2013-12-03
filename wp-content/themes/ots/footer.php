@@ -3,7 +3,7 @@
 
 	<footer class="footer cf">
 		<div class="wrapper cf">
-		    <p>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></p>
+		    <p>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>, Inc.</p>
 		</div>
 	</footer>
 

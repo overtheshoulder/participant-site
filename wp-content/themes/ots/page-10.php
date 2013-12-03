@@ -27,14 +27,14 @@
         <div class="circle"></div>
         <div class="number">3</div>
         <div class="info">
-            <p>Download the Over the Shoulder app and get ready show us your world!</p>
+            <p>Download the Over the Shoulder app and get ready to show us your world!</p>
         </div>
     </div>
 
 </div><!-- .steps -->
 
 <div class="cta">
-    <a href="" class="btn">Sign Me Up</a>
+    <a href="http://www.surveygizmo.com/s3/1343783/OTS-OPT-IN" target="_blank" class="btn">Sign Me Up</a>
 </div>
 
 <?php endwhile; endif; ?>
