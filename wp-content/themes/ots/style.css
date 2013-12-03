@@ -486,7 +486,9 @@ input[type="submit"]:hover {
 
 .question {
     font-size: 24px;
+    font-size: 21px;
     line-height: 32px;
+    line-height: 28px;
     text-align: center;
 }
 
