@@ -123,8 +123,10 @@ h4 {
 /** TITLE BAR ======**/
 
 .title-bar {
-    padding: 36px 0;
+    padding: 48px 0;
     background: #e22426;
+    background: url(images/hero.jpg);
+/*     box-shadow: 0 8px 0 rgba(0,0,0,0.2); */
 }
 
 .page-title {
@@ -382,6 +384,7 @@ input[type="submit"]:hover {
 }
 
 .hero:before {
+    display: block;
     content: "";
     position: absolute;
     left: 10%;
