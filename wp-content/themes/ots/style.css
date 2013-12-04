@@ -126,7 +126,7 @@ h4 {
     padding: 48px 0;
     background: #e22426;
     background: url(images/hero.jpg);
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
 }
 
 .page-title {
@@ -416,7 +416,7 @@ input[type="submit"]:hover {
     float: left;
     width: 100%;
     padding: 36px 380px 0 40px;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
 }
 
 .hero .content h1 {
