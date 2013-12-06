@@ -1,19 +1,15 @@
-<?php get_header(); ?>
+<?php get_header(); ?>	
 
-<section id="hero" class="hero cf">
-	
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<section class="content">
-			<?php the_content(); ?>
-		</section>
-	<?php endwhile; endif; ?>
-		
-        <div class="phone">
-            <h3 class="title">Watch the Video</h3>
-            <a href="#" class="btn btn-video"></a>
-        </div>
-    
-</section>	
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<section class="content">
+		<?php the_content(); ?>
+	</section>
+<?php endwhile; endif; ?>
+
+    <div class="phone">
+        <h3 class="title">Watch the Video</h3>
+        <a href="#" class="btn btn-video"></a>
+    </div>
 
 <div class="modal">
 	<div class="modal-bg"></div>

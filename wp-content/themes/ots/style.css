@@ -28,6 +28,7 @@ body {
 ========================================================**/
 
 .wrapper {
+    position: relative;
 	width: 94%;
 	max-width: 1024px;
 	margin: 0 auto;
@@ -306,18 +307,6 @@ input[type="submit"]:hover {
 	background: rgba(0,0,0,0.9);
 }
 
-/*
-.modal .wrapper {
-	position: relative;
-	z-index: 99;
-	max-width: 824px;
-	margin-top: 122px;
-	padding: 16px;
-	background: #fff;
-	border-radius: 3px;
-}
-*/
-
 .modal .wrapper {
 	position: absolute;
 	top: 50%;
@@ -392,54 +381,37 @@ input[type="submit"]:hover {
     HOME
 ========================================================**/
 
-.hero {
-    position: relative;
-    height: 480px;
-    background: #000 url(images/hero.jpg);
+.home .title-bar {
+    min-height: 214px;
+    padding: 36px 0;
 }
 
-.hero:before {
-    display: block;
-    content: "";
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 50%;
-    bottom: 1px;
-    z-index: -2;
-    width: 80%;
-    border-radius: 100px / 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-}
-
-.hero .content {
-    float: left;
-    width: 100%;
-    padding: 36px 380px 0 40px;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
-}
-
-.hero .content h1 {
-    margin-bottom: 18px;
+.home .page-title {
+    padding-right: 440px;
     color: #fff;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 42px;
+    line-height: 48px;
     font-weight: 900;
+    text-align: left;
+    text-transform: none;
 }
 
-.hero .content p {
+.home .content {
+    min-height: 340px;
+    padding-right: 440px;
+}
+
+.home .content p {
     margin-bottom: 18px;
-    padding-right: 8%;
-    color: #fff;
     font-size: 18px;
 }
 
 .phone {
     position: absolute;
-    bottom: 0;
-    right: 44px;
-    width: 289px;
-    height: 383px;
+    top: -216px;
+    right: 40px;
+    width: 305px;
+    height: 528px;
     background: url(images/phone.png) no-repeat 0 0;
     text-align: center;
 }
@@ -447,6 +419,7 @@ input[type="submit"]:hover {
 .phone .title {
     padding: 170px 0 20px;
     color: #fff;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -673,10 +646,6 @@ input[type="submit"]:hover {
 	border-top: 1px solid #e3e3e3;
 }
 
-.home .footer .wrapper {
-    border: none;
-}
-
 .footer p {
 	font-size: 14px;
 }
@@ -686,22 +655,24 @@ input[type="submit"]:hover {
     MEDIA QUERIES
 ========================================================**/
 
-@media all and (max-width: 990px) {
-    .hero { height: auto; overflow: hidden; }
-    .hero .content { padding: 36px 40px 18px 40px; }
-    .hero .content p { padding-right: 360px; }
-    .phone { bottom: auto; top: 132px; }
-    .phone .title { padding-top: 150px; }
-/*     .modal .wrapper { max-width: 824px; margin-top: 122px; } */
+@media all and (max-width: 960px) {
+    .home .page-title, .home .content { padding-right: 400px; }
 }
 
 @media all and (max-width: 890px) {
-    .hero .content { padding: 24px 30px 18px; }
-    .hero .content p { font-size: 16px; }
+    .home .page-title, .home .content { padding-right: 340px; }
+    .home .page-title { font-size: 36px; line-height: 42px; }
+    .home .content { min-height: 300px; }
+    .home .content p { font-size: 16px; }
+    .phone { width: 250px; height: 436px; background-size: 100%; }
     .modal .wrapper { position: relative; top: 10%; left: auto; margin: 0 auto; }
 }
 
 @media all and (max-width: 840px) {
+    .home .title-bar { min-height: inherit; padding-bottom: 42px; }
+    .home .page-title { padding-right: 0; }
+    .home .content { min-height: 400px; }
+    .phone { top: -60px; }
     .connector { display: none; }
     .steps { height: auto; }
     .step { margin: 0 5% 24px; }
@@ -712,7 +683,6 @@ input[type="submit"]:hover {
     h1 { font-size: 36px; }
     h2 { font-size: 24px; line-height: 32px; }
     h3 { font-size: 20px; }
-    .phone { bottom: 0; top: auto; }
     .page-id-8 .content p:first-of-type { font-size: 16px; }
 }
 
@@ -720,7 +690,6 @@ input[type="submit"]:hover {
     .break { display: inline; }
     .hero .content { float: none; }
     .hero .content p { padding-right: 0; }
-    .phone { position: relative; bottom: auto; right: auto; margin: 0 auto -48px; }
 }
 
 @media all and (max-width: 700px) {
@@ -737,14 +706,16 @@ input[type="submit"]:hover {
     .main-nav a:hover, .main-nav .current-menu-item a { background: #e43a3b; }
     .btn-mobile { display: block; font-size: 1em; }
     
+    .home .content { min-height: inherit; padding: 0; }
+    .phone { position: relative; top: auto; right: auto; margin: 0 auto 24px; width: auto; height: auto; background: #ed1c24; padding: 24px 0; border-radius: 5px; }
+    .phone .title { padding-top: 0; font-size: 20px; }
+    
     .question { font-size: 20px; line-height: 24px; }
     .page-id-6 .main .widget .widget-title { font-size: 20px; }
     .page-id-6 .main .widget p { font-size: 16px; }
 }
 
 @media all and (max-width: 600px) {
-    .hero .content h1 { font-size: 28px; }
-    
     .page-id-8 .content .info, .page-id-8 .content .wpcf7 { float: none; width: auto; }
 }
 
@@ -753,7 +724,8 @@ input[type="submit"]:hover {
 
     h2 { font-size: 20px; line-height: 24px; }
     h3 { font-size: 16px; }
-    .page-title { font-size: 32px; }
+    .page-title, .home .page-title { font-size: 32px; }
+    .home .page-title { line-height: 1.2em; }
     .sub-title { margin-bottom: 24px; }
 
     .main-nav li, .main-nav li:nth-child(2n+1) { float: none; width: 100%; border-right: inherit; }
@@ -761,14 +733,11 @@ input[type="submit"]:hover {
     .hero .content { padding: 16px 6%; }
     .hero .content h1 { font-size: 24px; line-height: 1.25em; }
     
-    .phone { width: auto; height: auto; background: #ed1c24; margin: 0 6% 24px; padding: 24px 0; border-radius: 5px; }
-    .phone .title { padding-top: 0; font-size: 20px; }
-    
     .page-id-6 .main .widget { width: auto;}
 }
 
 @media all and (max-width: 520px) {
-    .page-title { font-size: 28px; }
+    .page-title, .home .page-title { font-size: 28px; }
 }
 
 @media all and (max-height: 600px) and (max-width: 890px) {

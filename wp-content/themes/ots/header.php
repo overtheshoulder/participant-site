@@ -93,13 +93,19 @@
 		</div>
 	</header>
 
-<?php if ( !is_front_page() ): ?>
+<?php if ( !is_front_page() ) { ?>
     <section id="title-bar" class="title-bar">
         <div class="wrapper">
             <h1 class="page-title"><?php the_title(); ?></h1>
         </div>
     </section>
-<?php endif; ?>	
+<?php } else { ?>
+    <section id="title-bar" class="title-bar">
+        <div class="wrapper">
+            <h1 class="page-title"><?php echo get_post_meta( 2, 'sub-title', true ); ?></h1>
+        </div>
+    </section>    
+<?php } ?>	
 
 	<section id="main" class="main">
 	    <div class="wrapper cf">
